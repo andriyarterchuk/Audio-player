@@ -1,0 +1,163 @@
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(235, 0, 55, 1);
+    background: -moz-linear-gradient(left, rgba(235, 0, 55, 1) 0%, rgba(235, 0, 55, 1) 50%, rgba(235, 0, 55, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235, 0, 55, 1)), color-stop(50%, rgba(235, 0, 55, 1)), color-stop(100%, rgba(235, 0, 55, 1)));
+    background: -webkit-linear-gradient(left, rgba(235, 0, 55, 1) 0%, rgba(235, 0, 55, 1) 50%, rgba(235, 0, 55, 1) 100%);
+    background: -o-linear-gradient(left, rgba(235, 0, 55, 1) 0%, rgba(235, 0, 55, 1) 50%, rgba(235, 0, 55, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(235, 0, 55, 1) 0%, rgba(235, 0, 55, 1) 50%, rgba(235, 0, 55, 1) 100%);
+    background: linear-gradient(to right, rgba(235, 0, 55, 1) 0%, rgba(235, 0, 55, 1) 50%, rgba(235, 0, 55, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eb0037', endColorstr='#eb0037', GradientType=1);
+}
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#player {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+    color: white;
+}
+#cover {
+    width: 100%;
+    height: 310px;
+    border: 5px solid #42f477;
+    box-sizing: border-box;
+}
+img#poster {
+    width: 300px;
+    height: 300px;
+}
+#buttons {
+    position: relative;
+    margin-top: 30px;
+}
+#info {
+    text-align: center;
+}
+#info h2 {
+    margin-bottom: 0;
+}
+#pauseButton,
+#previousButton,
+#nextButton {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#pauseButton {
+    left: 65px;
+}
+#previousButton {
+    left: 20px;
+}
+#nextButton {
+    left: 110px;
+}
+#pauseButton:active,
+#previousButton:active,
+#nextButton:active {
+    margin-top: 2px;
+}
+#volume {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+}
+#playlist {
+    position: absolute;
+    top: 0%;
+    left: 120%;
+    width: 300px;
+    height: 310px;
+    border: 5px solid #42f477;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#playlist h1 {
+    margin: 5px 0 0 10px;
+    font-size: 25px;
+}
+.song h2 {
+    font-size: 15px;
+    margin: 0 0 0 10px;
+}
+.active h2 {
+    color: black;
+}
+#Time {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+#currentTime {
+    width: 80%;
+}
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+    body {
+        display: none;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #main {
+        width: 100%;
+    }
+    #player {
+        position: relative;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 20px;
+        color: white;
+    }
+    #cover {
+        height: 310px;
+    }
+    img#poster {
+        width: 100%;
+        height: 300px;
+    }
+    #playlist {
+        position: relative;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #player {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    #cover {
+        width: 300px;
+        height: 310px;
+    }
+    img#poster {
+        width: 100%;
+        height: 300px;
+    }
+    #playlist {
+        position: absolute;
+        top: 0;
+        left: 110%;
+        width: 300px;
+    }
+}
